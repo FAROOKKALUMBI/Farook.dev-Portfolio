@@ -20,7 +20,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import { Button } from "./ui/button";
-import profileImage from "@/assets/profile.png";
+import profileImage from "@/assets/header-profile.png";
 
 const Navigation = () => {
   const [isDark, setIsDark] = useState(false);

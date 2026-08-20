@@ -10,9 +10,9 @@ const Landing = () => {
       <div className="absolute -top-32 -right-24 h-72 w-72 rounded-full bg-[radial-gradient(circle,_hsl(var(--accent)/0.4),_transparent_70%)] blur-2xl" />
       <div className="absolute bottom-0 left-0 h-80 w-80 rounded-full bg-[radial-gradient(circle,_hsl(var(--secondary)/0.35),_transparent_70%)] blur-3xl" />
 
-      <div className="relative z-10 px-6 pb-20 pt-28 sm:px-10 lg:px-16">
-        <section className="max-w-6xl mx-auto pt-16 grid gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(280px,0.85fr)] items-center">
-          <div className="space-y-6 animate-fade-in">
+      <div className="relative z-10 px-6 pb-16 pt-20 sm:pt-22 sm:px-10 lg:px-16">
+        <section className="max-w-7xl mx-auto pt-2 sm:pt-4 grid gap-6 lg:gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(420px,1fr)] items-center">
+          <div className="space-y-6 animate-fade-in z-10">
 
             <p className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent ">
               About Me
@@ -20,7 +20,7 @@ const Landing = () => {
             <h1 className="text-4xl md:text-6xl font-bold font-display leading-tight">
               Hi, I am <span className="text-6xl md:text-6xl font-bold bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent ">Farook Kalumbi</span>
             </h1>
-            <div className="text-lg md:text-xl text-muted-foreground max-w-7xl leading-relaxed space-y-6">
+            <div className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed space-y-6">
               <p>
                 I’m a <strong className="text-foreground">creative technologist, software developer, graphic designer, and video editor</strong> passionate about combining technology and design to create meaningful digital experiences.
               </p>
@@ -56,23 +56,21 @@ const Landing = () => {
             </div>
           </div>
 
-          <div className="relative w-full max-w-md mx-auto lg:max-w-none flex justify-center items-end animate-fade-in group">
+          <div className="relative w-full max-w-2xl mx-auto lg:ml-auto flex justify-center items-center animate-fade-in group">
             {/* Soft Ambient Background Glow */}
-            <div className="absolute inset-x-4 bottom-2 top-8 rounded-full bg-gradient-to-tr from-primary/25 via-accent/20 to-secondary/20 blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute inset-x-2 bottom-4 top-4 rounded-full bg-gradient-to-tr from-primary/35 via-accent/30 to-secondary/30 blur-3xl opacity-85 group-hover:opacity-100 transition-opacity duration-500" />
             
-            {/* Standalone Cutout Portrait Image with Brush Gradient Bottom Blend */}
-            <div className="relative w-full max-w-lg aspect-[4/5] flex items-end justify-center">
+            <div className="relative w-full h-[540px] sm:h-[650px] md:h-[730px] lg:h-[calc(100vh-7rem)] lg:min-h-[680px] lg:max-h-[860px] flex items-end justify-center overflow-visible">
               <img
                 src={profileImage}
                 alt="Farook Kalumbi"
-                className="h-full w-auto object-contain object-bottom transition-transform duration-500 group-hover:scale-102 dark:drop-shadow-[0_15px_35px_rgba(0,0,0,0.85)] drop-shadow-[0_15px_25px_rgba(0,0,0,0.2)]"
+                className="w-full h-full object-contain object-bottom transform-gpu transition-transform duration-500 group-hover:scale-[1.025] filter drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_30px_60px_rgba(0,0,0,0.95)]"
                 style={{
-                  maskImage: "linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0) 100%)",
-                  WebkitMaskImage: "linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0) 100%)"
+                  maskImage: "linear-gradient(to bottom, #000 88%, rgba(0,0,0,0.9) 95%, transparent 100%)",
+                  WebkitMaskImage: "linear-gradient(to bottom, #000 88%, rgba(0,0,0,0.9) 95%, transparent 100%)"
                 }}
+                loading="eager"
               />
-              {/* Soft Brush Fade Blend Layer at bottom */}
-              <div className="absolute bottom-0 inset-x-0 h-10 bg-gradient-to-t from-background via-background/50 to-transparent pointer-events-none" />
             </div>
           </div>
 
