@@ -1,0 +1,8 @@
+Missing assets (restore these files into public/):
+- public\gronz.jpg
+- public\gallery\gronz.jpg
+- public\certificates\Cyber Threat Management.pdf
+- public\certificates\CCNA-_Introduction_to_Networks_certificate_bedict1523-my-mzuni-ac-mw_e7eec733-62d0-499a-8500-b37f8b92cee2.pdf
+- public\certificates\Digital_Safety_and_Security_Awareness_certificate_emmanuelmhango25-gmail-com_9d754044-6669-41b3-bc12-31e064993d34.pdf
+- public\certificates\Emmanuel Mhango- AI Agent certificate.pdf
+- public\certificates\Introduction_to_Modern_AI_certificate_emmanuelmhango25-gmail-com_3f0b8bc9-1f19-4f2b-b5f6-7434a9f56874.pdf
